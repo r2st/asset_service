@@ -18,6 +18,7 @@ This project is a file uploader service using Go, Gin framework for the API, Pos
 
 - **POST /upload** (http://localhost:8080/upload): Upload a file. The file will be stored in MinIO, and its metadata will be saved in PostgreSQL.
 - **GET /files** (http://localhost:8080/files): List all files along with their metadata.
+- **GET /files** (http://localhost:8080/files?page=1&limit=100): List all files along with their metadata based on page and limit. "page" is value current page value and limit is the number of rows in each page.
 - **GET /download/:id** (http://localhost:8080/download/db7fa1dc-3a29-46c3-840e-ac9db00aba75): Download a file by its ID.
 
 ## Featues (Completed)
