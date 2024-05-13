@@ -1,0 +1,29 @@
+{
+  "server": {
+      "port": "8080",
+      "cors": {
+          "allowOrigins": ["http://localhost:3000"],
+          "allowMethods": ["GET", "POST", "OPTIONS"],
+          "allowHeaders": ["Origin", "Content-Type"],
+          "exposeHeaders": ["Content-Length"],
+          "allowCredentials": true,
+          "maxAge": "12h"
+      }
+  },
+  "database": {
+      "dataSourceName": "host=localhost user=postgres password=postgres dbname=go_asset_service sslmode=disable",
+      "maxIdleConns": 10,
+      "maxOpenConns": 25,
+      "defaultQueryLimit": "200",
+      "connMaxLifetime": "1h"
+  },
+  "minio": {
+      "endpoint": "localhost:9000",
+      "accessKey": "minioadmin",
+      "secretKey": "minioadmin",
+      "secure": false,
+      "bucketName": "assets",
+      "bucketRegion": "us-east-1",
+      "bucketObjectLocking": false
+  }
+}

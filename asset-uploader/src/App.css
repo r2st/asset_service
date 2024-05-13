@@ -1,0 +1,11 @@
+/* General styling for the App container */
+.App {
+  text-align: center;
+  background-color: #dbdee0; /* Dark background for the whole app */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  color: #165eb0;
+}
